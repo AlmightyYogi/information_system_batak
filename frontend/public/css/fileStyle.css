@@ -1,0 +1,395 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Gambar Header */
+.dashboard-header {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.dashboard-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Konten Utama */
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 40px 0;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left; 
+}
+
+.text-content h2 {
+    font-size: 32px;
+    color: #4b372f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #333;
+    white-space: pre-line;
+}
+
+/* Gambar Danau Toba Mentok Kanan */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Sejarah */
+.dashboard-banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('../images/banner-history.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    background: rgba(75, 55, 47, 0.8);
+    color: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner-overlay a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.aksara-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.aksara-image {
+    flex: 1;
+    text-align: center;
+}
+
+.aksara-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aksara-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.aksara-text h2 {
+    font-size: 28px;
+    color: #4b372f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aksara-text p {
+    font-size: 16px;
+    color: #333;
+}
+
+.bg-sejarah {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.sejarah-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Konten utama */
+.sejarah-content {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Gaya untuk subjudul */
+.sejarah-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Paragraf */
+.sejarah-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.aksara-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.aksara-content {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.aksara-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.materi-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.materi-content {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.materi-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.materi-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kuis-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.materi-btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.materi-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.materi-btn.prev-btn {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.materi-btn.next-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.materi-btn.quiz-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 18px;
+}
+
+.materi-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #009ac4);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.materi-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.materi-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(0, 0, 0, 0) 60%);
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+}
+
+.materi-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.prev-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.prev-btn:hover {
+    background: linear-gradient(135deg, #e12c55, #e7381b);
+}
+
+.aksara-images img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-success {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.profile-header h2 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Profile Body */
+.profile-body {
+    text-align: left;
+}
+
+.profile-body h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.profile-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-body li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-body li strong {
+    color: #333;
+}
+
+/* Logout Button */
+#logout-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
